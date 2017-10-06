@@ -3,24 +3,17 @@
  * hear hear
  */
 
-var getRandomNumber = function(scale) {
-	var rand = Math.random();
-	var ceiling = Math.ceil(rand * scale);
-	var floor = Math.floor(rand * scale);
-	var round = Math.round(rand * scale);
+var obj = require ("./score.js");
 
-	console.log("The random number is: " + rand);
-	console.log("The scale is: " + scale);
-	console.log("The ceiling number is: " + ceiling);
-	console.log("The floor number is: " + floor);
-	console.log("The rounding number is: " + round);
-};
+console.log(obj);
 
-getRandomNumber(10);
-getRandomNumber(100);
-getRandomNumber(1000);
+var score = obj.myhandler;
 
+score.addGrade(100);
+score.addGrade(90);
+score.addGrade(85);
+score.addGrade(96);
+score.addGrade(95.5);
 
-for (i=0;i<10;i++) {
-	console.log("loop count = " + i);
-}
+console.log("Total Grades are: " + score.getTotalGrades());
+console.log("Average Grades is: " + score.getAverage());
