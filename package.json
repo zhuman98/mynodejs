@@ -4,6 +4,22 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-	"start": "node app.js"
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhuman98/mynodejs.git"
+  },
+  "author": "Lei Zhu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhuman98/mynodejs/issues"
+  },
+  "homepage": "https://github.com/zhuman98/mynodejs#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "gulp": "^3.9.1",
+    "mongoose": "^4.12.4",
+    "nodemon": "^1.12.1"
   }
 }
