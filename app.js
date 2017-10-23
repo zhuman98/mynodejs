@@ -21,11 +21,11 @@ console.log("Average Grades is: " + score.getAverage());
 */
 
 var express = require('express');
-var mongoose = require('mongoose');
+//var mongoose = require('mongoose');
 
-var db=mongoose.connect('mongodb://localhost/bookAPI');
+//var db=mongoose.connect('mongodb://localhost/bookAPI');
 
-var Book = require('./models/bookModel');
+//var Book = require('./models/bookModel');
 
 var app = express();
 var port = process. env.PORT || 3000; //check for environment PORT, if not there, use 3000 as default
@@ -49,7 +49,7 @@ app.get('/', function (req, res) {
 var bookRouter = express.Router();
 bookRouter.route('/books').get(function(req,res){
     var responseJson={
-      hello: "This is my API"
+      hello: "This is my API in json"
     };
     res.json(responseJson);
   });

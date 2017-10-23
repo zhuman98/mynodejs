@@ -17,9 +17,15 @@
   },
   "homepage": "https://github.com/zhuman98/mynodejs#readme",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "gulp": "^3.9.1",
+    "gulp-env": "^0.4.0",
+    "gulp-mocha": "^4.3.1",
     "mongoose": "^4.12.4",
-    "nodemon": "^1.12.1"
+    "nodemon": "^1.12.1",
+    "should": "^13.1.2",
+    "sinon": "^4.0.1",
+    "supertest": "^3.0.0"
   }
 }
